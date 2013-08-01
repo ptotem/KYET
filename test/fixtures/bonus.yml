@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  multiplier: 1
+  plus: 1
+  minus: 1
+  wagerable: false
+  start_time: 2013-07-25 11:58:35
+  end_time: 2013-07-25 11:58:35
+
+two:
+  name: MyString
+  multiplier: 1
+  plus: 1
+  minus: 1
+  wagerable: false
+  start_time: 2013-07-25 11:58:35
+  end_time: 2013-07-25 11:58:35

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" class="no-right-bar">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <title>Welcome to The Economic Times</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- http://davidbcalhoun.com/2010/viewport-metatag -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <%= javascript_include_tag 'application' %>
+
+  <!--// OPTIONAL & CONDITIONAL CSS FILES //-->
+  <!-- custom/responsive growl messages -->
+  <link rel="stylesheet" href="/assets/css/toastr.custom.css?v=1">
+  <link rel="stylesheet" href="/assets/css/toastr-responsive.css?v=1">
+  <link rel="stylesheet" href="/assets/css/jquery.jgrowl.css?v=1">
+
+  <!-- // DO NOT REMOVE OR CHANGE ORDER OF THE FOLLOWING // -->
+  <!-- bootstrap default css (DO NOT REMOVE) -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=1">
+  <link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css?v=1">
+  <!-- font awsome and custom icons -->
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css?v=1">
+  <link rel="stylesheet" href="/assets/css/cus-icons.css?v=1">
+  <!-- jarvis widget css -->
+  <link rel="stylesheet" href="/assets/css/jarvis-widgets.css?v=1">
+  <!-- Data tables, normal tables and responsive tables css -->
+  <link rel="stylesheet" href="/assets/css/DT_bootstrap.css?v=1">
+  <link rel="stylesheet" href="/assets/css/responsive-tables.css?v=1">
+  <!-- used where radio, select and form elements are used -->
+  <link rel="stylesheet" href="/assets/css/uniform.default.css?v=1">
+  <link rel="stylesheet" href="/assets/css/select2.css?v=1">
+  <!-- main theme files -->
+  <link rel="stylesheet" href="/assets/css/theme.css?v=1">
+  <link rel="stylesheet" href="/assets/css/theme-responsive.css?v=1">
+
+  <!-- // THEME CSS changed by javascript: the CSS link below will override the rules above // -->
+  <!-- For more information, please see the documentation for "THEMES" -->
+  <link rel="stylesheet" id="switch-theme-js" href="/assets/css/themes/default.css?v=1">
+
+  <!-- To switch to full width -->
+  <link rel="stylesheet" id="switch-width" href="/assets/css/full-width.css?v=1">
+
+  <!-- Flexslide -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/flexslider.css">
+
+  <!-- Webfonts -->
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700' type='text/css'>
+
+  <!-- All javascripts are located at the bottom except for HTML5 Shim -->
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="/assets/js/include/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- For Modern Browsers -->
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.png">
+  <!-- For everything else -->
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+  <!-- For retina screens -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/favicons/apple-touch-icon-retina.png">
+  <!-- For iPad 1-->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/favicons/apple-touch-icon-ipad.png">
+  <!-- For iPhone 3G, iPod Touch and Android -->
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/favicons/apple-touch-icon.png">
+
+  <!-- iOS web-app metas -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Add your custom home screen title: -->
+  <meta name="apple-mobile-web-app-title" content="Jarvis">
+
+  <!-- Startup image for web apps -->
+  <link rel="apple-touch-startup-image" href="/assets/img/splash/ipad-landscape.png"
+        media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+  <link rel="apple-touch-startup-image" href="/assets/img/splash/ipad-portrait.png"
+        media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+  <link rel="apple-touch-startup-image" href="/assets/img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+
+</head>
+
+<body>
+<!-- .height-wrapper -->
+<div class="height-wrapper">
+
+<!-- header -->
+<header>
+  <!-- tool bar -->
+  <div id="header-toolbar" class="container-fluid">
+    <!-- .contained -->
+    <div class="contained">
+
+    </div>
+    <!-- end .contained -->
+  </div>
+  <!-- end tool bar -->
+
+</header>
+<!-- end header -->
+
+<div id="main" role="main" class="container-fluid">
+
+<div class="contained">
+<!-- aside -->
+<aside>
+
+  <!-- Left Menu -->
+
+  <div class="sidebar-nav-fixed">
+
+    <div style='background: url("/assets/img/transparant-20.png") repeat scroll 0 0;'>
+      <%= image_tag "/assets/img/logo.png" %>
+    </div>
+
+    <ul class="menu" id="accordion-menu-js">
+      <li class="">
+        <a href="/"><i class="icon-home"></i>Home</a>
+      </li>
+      <li class="current">
+        <a href="/quiz"><i class="icon-pencil"></i>Quiz</a>
+      </li>
+      <li class="">
+        <a href="/archives"><i class="icon-briefcase"></i>Archives</a>
+      </li>
+      <li class="">
+        <a href="/profile"><i class="icon-user"></i>Profile</a>
+      </li>
+      <li class="">
+        <a href="/leaderboard"><i class="icon-flag"></i>LeaderBoard</a>
+      </li>
+      <li class="">
+        <a href="/rules"><i class="icon-book"></i>Rules</a>
+      </li>
+      <li class="">
+        <%= link_to destroy_user_session_path, method: :delete do %>
+            <i class="icon-off"></i>Logout
+        <% end %>
+      </li>
+      <li style="height: 500px"></li>
+    </ul>
+
+  </div>
+
+</aside>
+<!-- aside end -->
+
+<!-- main content -->
+<div id="page-content">
+<!-- breadcrumb -->
+<!-- DISABLED
+<ul class="breadcrumb">
+    <li>
+        <a href="javascript:void(0);"><i class="icon-off"></i> Dashboard</a><span class="divider">/</span>
+    </li>
+    <li>
+        <a href="javascript:void(0);">Library</a><span class="divider">/</span>
+    </li>
+    <li class="active">
+        Current Page
+    </li>
+</ul>
+-->
+<!-- end breadcrumb -->
+
+<!-- page header -->
+
+
+<div class="fluid-container">
+
+<!-- widget grid -->
+<section id="widget-grid" class="">
+
+<!-- row-fluid -->
+
+<div class="row-fluid">
+
+  <article class="span9">
+    <!-- new widget -->
+    <div class="jarviswidget" id="widget-id-3">
+
+      <div>
+        <div class="inner-spacer">
+          <!-- content -->
+          <div class="widget-content-padding">
+            <div class="row-fluid">
+              <div class="span12">
+                <h1>Today's Question
+                  <small><span class="pull-right">10th July 2013</span></small>
+                </h1>
+                <hr>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span12" style="font-size:18px; color:#000000;">
+                How many roads did a man walk down to close the Arcelor-Mittal deal, which was orchestrated by Mr.Mittal
+                and God himself and pissed off the French Government enough for them to lose their baguette lunches?
+              </div>
+            </div>
+            <hr>
+            <div class="row-fluid">
+              <div class="span3" style="font-size:16px; color:#000000; background-color:#CDCDCD; padding:10px; border-radius:5px 5px 5px 5px;">
+                <div class="row-fluid">
+                  <div class="span12">
+                    <input type="radio" name="answering" id="optionsCheckbox-5" value="option5" class="pull-right">
+
+                    <div style="font-size:20px; vertical-align:middle;"><strong>(A)</strong></div>
+                  </div>
+                </div>
+                <div class="row-fluid">
+                  <div class="span12">
+                    <div class="span10">42 roads</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span3" style="font-size:16px; color:#000000; background-color:#CDCDCD; padding:10px; border-radius:5px 5px 5px 5px;">
+                <div class="row-fluid">
+                  <div class="span12">
+                    <input type="radio" name="answering" id="optionsCheckbox-5" value="option5" class="pull-right">
+
+                    <div style="font-size:20px; vertical-align:middle;"><strong>(B)</strong></div>
+                  </div>
+                </div>
+                <div class="row-fluid">
+                  <div class="span12">
+                    <div class="span10">Who Knows</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span3" style="font-size:16px; color:#000000; background-color:#CDCDCD; padding:10px; border-radius:5px 5px 5px 5px;">
+                <div class="row-fluid">
+                  <div class="span12">
+                    <input type="radio" name="answering" id="optionsCheckbox-5" value="option5" class="pull-right">
+
+                    <div style="font-size:20px; vertical-align:middle;"><strong>(C)</strong></div>
+                  </div>
+                </div>
+                <div class="row-fluid">
+                  <div class="span12">
+                    <div class="span10">Only Bob Dylan Knows</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span3" style="font-size:16px; color:#000000; background-color:#CDCDCD; padding:10px; border-radius:5px 5px 5px 5px;">
+                <div class="row-fluid">
+                  <div class="span12">
+                    <input type="radio" name="answering" id="optionsCheckbox-5" value="option5" class="pull-right">
+
+                    <div style="font-size:20px; vertical-align:middle;"><strong>(D)</strong></div>
+                  </div>
+                </div>
+                <div class="row-fluid">
+                  <div class="span12">
+                    <div class="span10">Or you might want to visit Stavro Mueller Beta soon</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="row-fluid">
+              <a role="button" class="btn btn-success btn-large span12" href="#check_bonus" data-toggle="modal">Submit</a>
+            </div>
+
+            <div id="check_bonus" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                  ×
+                </button>
+                <h3>Want to bet on it?</h3>
+              </div>
+              <div class="modal-body">
+                <h1>Double Trouble Bonus</h1>
+
+                <div class="row-fluid">
+                  <div class="span3"><%= image_tag "dice.jpg" %></div>
+                  <div class="span9">
+                    <p>
+                      If you are sure of the answer, you can bet on it. If your answer is correct, you will get 10 additional points, else you will lose 10 points
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn medium" data-dismiss="modal">Cancel</a>
+                <a href="javascript:void(0);" class="btn medium btn-danger">Bet and Submit</a>
+                <a href="javascript:void(0);" class="btn medium btn-primary">Don't Bet and Submit</a>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- end content -->
+        </div>
+
+      </div>
+    </div>
+    <!-- end widget -->
+  </article>
+
+  <article class="span3">
+    <!-- new widget -->
+    <div class="row-fluid">
+      <div class="jarviswidget red" id="widget-id-3">
+        <header>
+          <h2>Points</h2>
+        </header>
+        <div>
+          <div class="inner-spacer">
+            <!-- content -->
+            <div class="widget-content-padding" style="text-align: center">
+              <h1>10 Points
+                <div style="font-size: small">for a correct answer</div>
+              </h1>
+            </div>
+            <!-- end content -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="jarviswidget yellow" id="widget-id-3">
+        <header>
+          <h2>Bonus</h2>
+        </header>
+        <div>
+          <div class="inner-spacer">
+            <!-- content -->
+            <div class="widget-content-padding" style="text-align: center">
+              <div class="row-fluid">
+                <h4><%= image_tag "weekly.jpg", class: "span3", style: "vertical-align:middle" %> Weekly Bonus</h4>
+              </div>
+              <div class="row-fluid">
+                <h4><%= image_tag "dice.jpg", class: "span3", style: "vertical-align:middle" %> Double Trouble</h4>
+              </div>
+            </div>
+            <!-- end content -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end widget -->
+  </article>
+</div>
+
+<!-- end row-fluid -->
+
+<!-- row-fluid -->
+
+<div class="row-fluid">
+  <article class="span6">
+
+
+    <div class="row-fluid">
+      <button type="button" class="btn btn-danger span12 bottom-padded">
+        <h2>Refer a friend to win extra points</h2>
+      </button>
+      <div class="fb-like span6" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-send="true" data-layout="box_count" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
+    </div>
+    <!-- new widget -->
+    <div class="jarviswidget yellow" id="widget-id-5">
+      <header>
+        <h2>Know the Know your ET Campaign</h2>
+      </header>
+      <div>
+
+        <div class="inner-spacer">
+          <!-- content goes here -->
+          <div class="widget-content-padding">
+            <div class="row-fluid">
+              <button type="button" class="btn btn-success span12 bottom-padded"><i
+              class="cus-award-star-gold"></i>
+                What is the Know your ET Campaign?
+              </button>
+            </div>
+            <div class="row-fluid">
+              <button type="button" class="btn btn-primary span6 bottom-padded"><i
+              class="cus-accept"></i>
+                How do I answer the question?
+              </button>
+              <button type="button" class="btn btn-warning span6 bottom-padded"><i
+              class="cus-user-black-female"></i>
+                How does the point system work?
+              </button>
+            </div>
+            <div class="row-fluid">
+              <button type="button" class="btn btn-warning span8 bottom-padded"><i
+              class="cus-accept"></i>
+                What are Bonus Questions? What are the various kinds of Bonus Questions that I can expect?
+              </button>
+              <button type="button" class="btn btn-danger span4 bottom-padded"><i class="cus-bomb"></i>
+                When will I know if I have won?
+              </button>
+            </div>
+            <!-- end content -->
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- end widget -->
+
+  </article>
+  <article class="span6">
+    <!-- new widget -->
+    <div class="jarviswidget red" id="widget-id-4">
+      <header>
+        <h2>Campaign News</h2>
+      </header>
+      <div>
+
+        <div class="inner-spacer">
+
+          <!-- content -->
+          <div class="widget-content-padding">
+            <div class="span9">
+              <div id="blogCarousel" class="carousel slide ">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <!-- Blog Item 1 -->
+                  <div class="item">
+                    <div class="span3">
+                      <a href="blog-single.htm">
+                        <img src="/assets/img/avatar/avatar_7.jpg" alt=""
+                             class="align-left" style="width:95%">
+                      </a>
+                    </div>
+                    <div class="span9">
+                      <h4>Akansha Pandit</h4>
+
+                      <p>She won the daily sweepstakes of July 20th and is currently at rank 23 in the overall
+                        campaign.</p>
+                    </div>
+                  </div>
+                  <div class="active item">
+                    <div class="span3">
+                      <a href="blog-single.htm">
+                        <img src="/assets/img/avatar/avatar_8.jpg" alt=""
+                             class="align-left" style="width:95%">
+                      </a>
+                    </div>
+                    <div class="span9">
+                      <h4>Jimmy Boy</h4>
+
+                      <p>He won the monthly sweepstakes for June and is currently at rank 3 in the
+                        overall campaign.</p>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="pull-right">
+                <button id="btn-blog-prev" class="btn btn-inverse btn-mini"
+                        type="button">Previous
+                </button>
+                <button id="btn-blog-next" class="btn btn-inverse btn-mini"
+                        type="button">Next
+                </button>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- end content -->
+        </div>
+        <!-- end inner spacer -->
+      </div>
+    </div>
+    <!-- end widget -->
+    <!-- new widget -->
+    <div class="jarviswidget navyblue" id="widget-id-4">
+      <header>
+        <h2>Meet the Winners</h2>
+      </header>
+      <div>
+
+        <div class="inner-spacer">
+
+          <!-- content -->
+          <div class="widget-content-padding">
+            <div class="span9">
+              <div id="blogCarousel" class="carousel slide ">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <!-- Blog Item 1 -->
+                  <div class="active item">
+                    <div class="span3">
+                      <a href="blog-single.htm">
+                        <img src="/assets/img/avatar/avatar_7.jpg" alt=""
+                             class="align-left" style="width:95%">
+                      </a>
+                    </div>
+                    <div class="span9">
+                      <h4>Akansha Pandit</h4>
+
+                      <p>She won the daily sweepstakes of July 20th and is currently at rank 23 in the overall
+                        campaign.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="span3">
+                      <a href="blog-single.htm">
+                        <img src="/assets/img/avatar/avatar_8.jpg" alt=""
+                             class="align-left" style="width:95%">
+                      </a>
+                    </div>
+                    <div class="span9">
+                      <h4>Jimmy Boy</h4>
+
+                      <p>He won the monthly sweepstakes for June and is currently at rank 3 in the
+                        overall campaign.</p>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="pull-right">
+                <button id="btn-blog-prev" class="btn btn-inverse btn-mini"
+                        type="button">Previous
+                </button>
+                <button id="btn-blog-next" class="btn btn-inverse btn-mini"
+                        type="button">Next
+                </button>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- end content -->
+        </div>
+        <!-- end inner spacer -->
+      </div>
+    </div>
+    <!-- end widget -->
+  </article>
+
+
+</div>
+
+<!-- end row-fluid -->
+
+</section>
+<!-- end widget grid -->
+</div>
+</div>
+<!-- end main content -->
+
+<!-- aside right on high res -->
+
+<aside class="right">
+</aside>
+
+<!-- end aside right -->
+</div>
+
+</div>
+<!--end fluid-container-->
+<div class="push"></div>
+</div>
+<!-- end .height wrapper -->
+
+<!-- footer -->
+
+<!-- if you like you can insert your footer here -->
+
+<!-- end footer -->
+
+<!--================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/libs/jquery.min.js"><\/script>')</script>
+<!-- OPTIONAL: Use this migrate script for plugins that are not supported by jquery 1.9+ -->
+<!-- DISABLED <script src="/assets/js/libs/jquery.migrate-1.0.0.min.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script>window.jQuery.ui || document.write('<script src="/assets/js/libs/jquery.ui.min.js"><\/script>')</script>
+
+<!-- IMPORTANT: Jquery Touch Punch is always placed under Jquery UI -->
+<script src="/assets/js/include/jquery.ui.touch-punch.min.js"></script>
+
+<!-- REQUIRED: Mobile responsive menu generator -->
+<script src="/assets/js/include/selectnav.min.js"></script>
+
+<!-- REQUIRED: Datatable components -->
+<script src="/assets/js/include/jquery.accordion.min.js"></script>
+
+<!-- REQUIRED: Toastr & Jgrowl notifications  -->
+<script src="/assets/js/include/toastr.min.js"></script>
+<script src="/assets/js/include/jquery.jgrowl.min.js"></script>
+
+<!-- REQUIRED: Sleek scroll UI  -->
+<script src="/assets/js/include/slimScroll.min.js"></script>
+
+<!-- REQUIRED: Form element skin  -->
+<script src="/assets/js/include/jquery.uniform.min.js"></script>
+
+<!-- REQUIRED: iButton -->
+<script src="/assets/js/include/jquery.ibutton.min.js"></script>
+
+<!-- REQUIRED: Functional Widgets -->
+<script src="/assets/js/include/jarvis.widget.min.js"></script>
+<script src="/assets/js/include/mobiledevices.min.js"></script>
+<!-- DISABLED (only needed for IE7 <script src="/assets/js/include/json2.js"></script> -->
+
+<!-- REQUIRED: Infinite Sliding Menu (used with inbox page) -->
+<script src="/assets/js/include/jquery.inbox.slashc.sliding-menu.js"></script>
+
+<!-- REQUIRED: Form validation plugin -->
+<script src="/assets/js/include/jquery.validate.min.js"></script>
+
+<!-- REQUIRED: Progress bar animation -->
+<script src="/assets/js/include/bootstrap-progressbar.min.js"></script>
+
+<!-- REQUIRED: Bootstrap Prompt -->
+<script src="/assets/js/include/bootbox.min.js"></script>
+
+<!-- REQUIRED: Bootstrap engine -->
+<script src="/assets/js/include/bootstrap.min.js"></script>
+
+<!-- DO NOT REMOVE: Theme Config file -->
+<script src="/assets/js/config.js"></script>
+
+<!-- Flexslider -->
+<script src="/assets/js/include/jquery.flexslider.js"></script>
+<script src="/assets/js/include/jquery.flexslider-min.js"></script>
+
+
+<script type="text/javascript">
+    /** DEMO SCRIPTS **/
+    $(function () {
+        /* show tooltips */
+//        $.jGrowl("Don't forget to check out the latest quiz happenings. </br> </br> You can move around the widgets and even change the colors!", {
+//            header: 'Welcome Quizster!',
+//            sticky: true,
+//            life: 5000,
+//            speed: 500,
+//            theme: 'with-icon',
+//            position: 'top-right', //this is default position
+//            easing: 'easeOutBack',
+//            animateOpen: {
+//                height: "show"
+//            },
+//            animateClose: {
+//                opacity: 'hide'
+//            }
+//        });
+
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
+
+        $("#btn-blog-next").click(function () {
+            $('#blogCarousel').carousel('next')
+        });
+        $("#btn-blog-prev").click(function () {
+            $('#blogCarousel').carousel('prev')
+        });
+
+        $("#btn-client-next").click(function () {
+            $('#clientCarousel').carousel('next')
+        });
+        $("#btn-client-prev").click(function () {
+            $('#clientCarousel').carousel('prev')
+        });
+
+
+    });
+    /** end DEMO SCRIPTS **/
+</script>
+
+</body>
+</html>
+
+
