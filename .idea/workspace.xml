@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c0201c0-d6d0-4118-85bf-9eac30ec898c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/DT/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/amchart/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/avatar/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/chat/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/colorpicker/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/csshack/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/cus/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/divider/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/errorpage/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/favicons/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/ibutton/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/invoice/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/jarvis/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/online-users/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/select2/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/splash/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/start-icons/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/uislider/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/uniform-skin/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/widget/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/arijit.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/backgrounds/recent3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/backgrounds/recent4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/backgrounds/recent5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/slide1.xcf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/theme/img/slider4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/images/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/img/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/theme/img/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/img/backgrounds/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/theme/img/backgrounds/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/img/backgrounds/bg1.jpg" afterPath="$PROJECT_DIR$/app/assets/theme/img/backgrounds/bg1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/img/backgrounds/bg2.jpg" afterPath="$PROJECT_DIR$/app/assets/theme/img/backgrounds/bg2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/img/logo.png" afterPath="$PROJECT_DIR$/app/assets/theme/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/img/slider1.jpg" afterPath="$PROJECT_DIR$/app/assets/theme/img/slider1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/img/slider2.jpg" afterPath="$PROJECT_DIR$/app/assets/theme/img/slider2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/img/slider3.jpg" afterPath="$PROJECT_DIR$/app/assets/theme/img/slider3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/KYET.iml" afterPath="$PROJECT_DIR$/.idea/KYET.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/css/flexslider.css" afterPath="$PROJECT_DIR$/app/assets/theme/css/flexslider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/theme/css/theme.css" afterPath="$PROJECT_DIR$/app/assets/theme/css/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KYET.iws" />
@@ -87,8 +42,8 @@
     <file path="/authentications_controller.rb" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1374615162340" ignored="false" />
     <file path="/routes.rb" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1374761326856" ignored="false" />
     <file path="/authentication.rb" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1374616015291" ignored="false" />
-    <file path="/Dummy.txt" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1375386646342" ignored="false" />
-    <file path="/index.html.erb" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1375477249118" ignored="false" />
+    <file path="/Dummy.txt" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1375477410175" ignored="false" />
+    <file path="/index.html.erb" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1375480737945" ignored="false" />
     <file path="/config.js" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1374762410123" ignored="false" />
     <file path="/dummy.xml" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1375474475081" ignored="false" />
     <file path="/new.html.erb" changelist="9c0201c0-d6d0-4118-85bf-9eac30ec898c" time="1374761550854" ignored="false" />
@@ -122,9 +77,10 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="71" selection-start="6040" selection-end="6040" vertical-scroll-proportion="1.1027027">
+            <state line="163" column="143" selection-start="6112" selection-end="6112" vertical-scroll-proportion="0.7810811">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -152,7 +108,7 @@
       <file leaf-file-name="theme.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/theme/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4958" column="0" selection-start="128496" selection-end="128496" vertical-scroll-proportion="0.0">
+            <state line="92" column="0" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#17814#18057#2" expanded="true" />
                 <element signature="e#40615#40770#1" expanded="true" />
@@ -822,6 +778,11 @@
       <created>1374604578513</created>
       <updated>1374604578513</updated>
     </task>
+    <task id="LOCAL-00001" summary="Made Changes. Please upload.">
+      <created>1375477413498</created>
+      <updated>1375477413498</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -846,10 +807,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819724" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32973805" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32973805" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -874,7 +835,7 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -910,7 +871,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Changes. Please upload." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -924,6 +885,7 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Made Changes. Please upload." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1011,7 +973,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/theme/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4958" column="0" selection-start="128496" selection-end="128496" vertical-scroll-proportion="0.0">
+        <state line="92" column="0" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#17814#18057#2" expanded="true" />
             <element signature="e#40615#40770#1" expanded="true" />
@@ -1021,9 +983,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="71" selection-start="6040" selection-end="6040" vertical-scroll-proportion="1.1027027">
+        <state line="163" column="143" selection-start="6112" selection-end="6112" vertical-scroll-proportion="0.7810811">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
