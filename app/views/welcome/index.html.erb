@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-right-bar">
+<html lang="en" class="no-right-bar no-left-bar">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -92,7 +92,7 @@
 
 <!-- header -->
 <header>
-   <!--tool bar-->
+  <!--tool bar-->
   <div id="header-toolbar" class="container-fluid">
     <!-- .contained -->
     <div class="contained">
@@ -100,7 +100,7 @@
     </div>
     <!-- end .contained -->
   </div>
-   <!--end tool bar-->
+  <!--end tool bar-->
 
 </header>
 <!-- end header -->
@@ -124,19 +124,13 @@
         <a href="/"><i class="icon-home"></i>Home</a>
       </li>
       <li class="">
-        <a href="javascript:void(0);"><i class="icon-pencil"></i>Quiz</a>
+        <a href="javascript:void(0);"><i class="icon-pencil"></i>Today's Quiz</a>
       </li>
       <li class="">
         <a href="javascript:void(0);"><i class="icon-briefcase"></i>Archives</a>
       </li>
       <li class="">
-        <a href="javascript:void(0);"><i class="icon-user"></i>Profile</a>
-      </li>
-      <li class="">
         <a href="javascript:void(0);"><i class="icon-flag"></i>LeaderBoard</a>
-      </li>
-      <li class="">
-        <a href="javascript:void(0);"><i class="icon-book"></i>Rules</a>
       </li>
       <li class="">
         <%= link_to destroy_user_session_path, method: :delete do %>
@@ -148,299 +142,194 @@
       </li>
     </ul>
 
+    <br>
+
+    <%= link_to "#", class: "btn btn-warning btn-large" do %>
+        <sub><i class="livicon" data-name="question" data-size="60"></i></sub>
+        <br>
+        <br>
+        Got a question? <br>Click here to understand how the know your ET Quiz works...
+        <br>
+        <br>
+    <% end %>
+
+
   </div>
 
- </aside>
+</aside>
 <!-- aside end -->
 
 <!-- main content -->
 <div id="page-content">
-<!-- breadcrumb -->
-<!-- DISABLED
-<ul class="breadcrumb">
-    <li>
-        <a href="javascript:void(0);"><i vacclass="icon-off"></i> Dashboard</a><span class="divider">/</span>
-    </li>
-    <li>
-        <a href="javascript:void(0);">Library</a><span class="divider">/</span>
-    </li>
-    <li class="active">
-        Current Page
-    </li>
-</ul>
--->
-<!-- end breadcrumb -->
-
-<!-- page header -->
-
-<div class="fluid-container">
-
-<!-- widget grid -->
-<section id="widget-grid" class="">
-
-<!-- row-fluid 1 -->
-<div class="row-fluid">
-
-  <article class="span6">
-    <!-- new widget -->
-
-    <!-- end widget -->
+  <div class="fluid-container" style="background: whitesmoke; padding:10px;margin-bottom: 20px;min-height: 480px;">
     <div class="row-fluid">
+      <%= link_to "#", class: "btn btn-warning span12" do %>
+          <%= image_tag "banner.png", class: "span5" %>
+    <% end %>
+    </div>
+    <br>
 
-      <div class="jarviswidget red upper" id="widget-id-3">
+    <div class="row-fluid" style="padding-left: 40px">
+      <div class="span2">
         <div>
-          <div class="inner-spacer">
-            <!-- content -->
+          <div class="your_score" style="border-bottom: 3px solid #2c576a;">
+            <h4><sub><i class="livicon pull-right" data-name="tasks" data-size="28"></i></sub>
+              Score</h4>
+          </div>
+          <h3 style="margin:0">450 Points</h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <%= image_tag "arijit.jpg", style: "border-radius:5px;border:1px solid black;" %>
+        <h4 style="margin-left: 0.5em">Arijit Lahiri</h4>
+        <%= link_to "Edit", "#", class: "btn btn-warning span12", style: "color:black; margin-bottom:5px" %>
+        <%= link_to "Logout", "#", class: "btn btn-danger span12" %>
+      </div>
+      <div class="span7">
+        <div class="row-fluid" style="text-align: center">
+          <div class="span3 blocked">
+            <img src="/assets/img/slider1.jpg" class="span12"/>
+            <a href="#" class="btn btn-warning btn-large">Today's Quiz</a>
+          </div>
+          <div class="span3 blocked">
+            <img src="/assets/img/slider2.jpg" class="span12"/>
+            <a href="#" class="btn btn-warning btn-large">The Archives</a>
+          </div>
+          <div class="span3 blocked">
+            <img src="/assets/img/slider3.jpg" class="span12"/>
+            <a href="#" class="btn btn-warning btn-large">Leaderboard</a>
+          </div>
+          <div class="span3 blocked">
+            <img src="/assets/img/slider4.jpg" class="span12"/>
+            <a href="#" class="btn btn-warning btn-large">Quiz Rules</a>
+          </div>
+        </div>
+        <br>
+
+        <div class="row-fluid">
+          <%= link_to "#", class: "btn btn-danger btn-large span12" do %>
+              <h4>Click here to refer the quiz to your friends. And earn bonus points.</h4>
+          <% end %>
+        </div>
+
+        <br>
+
+        <div class="row-fluid">
+          <div class="span4">
+            <div style="border-bottom: 3px solid #2c576a;">
+              <h4><sub><i class="livicon pull-right" data-name="users" data-size="28"></i></sub>
+                Referrals</h4>
+            </div>
             <br>
+            You referred the quiz to a 100 friends. Of these, 63 friends are playing the quiz. You have earned 256
+            points for your referrals.
+          </div>
+          <div class="span4">
+            <div>
+              <%= image_tag "ETlogo.png" %>
+            </div>
+          </div>
+          <div class="span4">
+            <div style="border-bottom: 3px solid #2c576a;">
+              <h4 style="text-align: right"><sub><i class="livicon pull-left" data-name="trophy" data-size="28"></i></sub>
+                Winners</h4>
+            </div>
             <br>
-            <div class="flexslider">
-              <ul class="slides">
-                <li>
-                  <a href="#"><img src="/assets/img/slider1.jpg"/></a>
-                </li>
-                <li>
-                  <a href="#"><img src="/assets/img/slider2.jpg"/></a>
-                </li>
-                <li>
-                  <a href="#"><img src="/assets/img/slider3.jpg"/></a>
-                </li>
-              </ul>
-            </div>
-            <!-- end content -->
+            Akansha Mittal, James Belushi and T.S.R. Raju won the daily prize for correctly answering the question for 3rd August.
           </div>
+        </div>
+
+      </div>
+
+      <div class="span2">
+        <div class="row-fluid " style="border-bottom: 3px solid #2c576a;">
+          <div class="span12">
+            <h4 style="text-align: right"><sub><i class="livicon pull-left" data-name="ghost" data-size="28"></i></sub>
+              Recent Activity
+            </h4>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <br>
+
+          <div class="row-fluid chatt2">
+            <div class="span2">
+              <sub><i class="livicon" data-name="thumbs-up" data-size="24"></i></sub>
+            </div>
+            <div class="span10">
+              You have answered a question for 10 points
+            </div>
+          </div>
+
+          <div class="row-fluid chatt3">
+            <div class="span2">
+              <sub><i class="livicon" data-color="#ffffff" data-name="thumbs-up" data-size="24"></i></sub>
+            </div>
+            <div class="span10">
+              You have earned a bonus worth 50 points
+            </div>
+          </div>
+
+          <div class="row-fluid chatt2">
+            <div class="span2">
+              <sub><i class="livicon"  data-name="thumbs-down" data-size="24"></i></sub>
+            </div>
+            <div class="span10">
+              You lost 100 points
+            </div>
+          </div>
+
+          <div class="row-fluid chatt2">
+            <div class="span2">
+              <sub><i class="livicon" data-name="thumbs-up" data-size="24"></i></sub>
+            </div>
+            <div class="span10">
+              You updated your profile
+            </div>
+          </div>
+
+          <div class="row-fluid chatt3">
+            <div class="span2">
+              <sub><i class="livicon" data-color="#ffffff" data-name="thumbs-up" data-size="24"></i></sub>
+            </div>
+            <div class="span10">
+              You won the double trouble bonus
+            </div>
+          </div>
+          <div class="row-fluid chatt2">
+            <div class="span2">
+              <sub><i class="livicon" data-name="thumbs-down" data-size="24"></i></sub>
+            </div>
+            <div class="span10">
+              You lost 100 points
+            </div>
+          </div>
+
+          <div class="row-fluid chatt2">
+            <div class="span2">
+              <sub><i class="livicon" data-name="thumbs-up" data-size="24"></i></sub>
+            </div>
+            <div class="span10">
+              You have earned a bonus of 50 points for your referral
+            </div>
+          </div>
+
 
         </div>
       </div>
 
-      <div class="jarviswidget customcolor1" id="widget-id-3">
-        <header>
-        </header>
-        <div>
-          <div class="inner-spacer">
-            <!-- content -->
-            <div class="widget-content-padding">
-              <div class="row-fluid" >
-                <div class="span12">
-                  <div class="row-fluid social">
-                    <div class="span12">
-                      <h4><sub><i class="livicon" data-name="users" data-size="36"></i></sub>&nbsp;Social </h4>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="row-fluid">
-                    <div class="span9" style="font-size: 18px;">
-                        You have earned 30 points referring your friends to the Know Your ET Quiz
-                    </div>
-                    <div class="span3">
-                      <button type="button" class="btn btn-warning span12 bottom-padded">
-                        <span><h5>Refer</h5></span>
-                      </button>
-                    </div>
-                  </div>
 
-                </div>
-
-              </div>
-              <!-- end content -->
-            </div>
-
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
 
-  </article>
-
-  <article class="span3">
-    <div class="row-fluid">
-      <!-- score widget-->
-      <div class="jarviswidget customcolor2" id="widget-id-3">
-        <header>
-
-        </header>
-        <div>
-
-          <div class="inner-spacer">
-            <!-- content -->
-            <div class="widget-content-padding">
-              <div class="row-fluid" >
-                <div class="row-fluid">
-                  <div class="span12">
-                    <div class="row-fluid your_score" style="border-bottom: 3px solid #2c576a;">
-                      <div class="span12">
-                        <h4><sub><i class="livicon" data-name="tasks" data-size="36"></i></sub>&nbsp;Your Score</h4>
-                      </div>
-
-                    </div>
-
-                    <div class="row-fluid" style="text-align: center;">
-                      <div class="span12">
-                        <span><h3> 45 POINTS</h3></span>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <div class="row-fluid">
-                  <ul class="aside-progress-stats" style="color:#2c576a;">
-                    <li>
-                     <strong>Correct Answer Rate &nbsp; 80%</strong>
-                      <div class="progress progress-danger slim">
-                        <div class="bar" data-percentage="80"></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- end content -->
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- todays question -->
-      <div class="jarviswidget customcolor2" id="widget-id-3">
-        <header>
-
-        </header>
-        <div>
-          <div class="inner-spacer">
-            <!-- content -->
-            <div class="widget-content-padding">
-              <div class="row-fluid" >
-                  <div class="span12">
-                    <div class="row-fluid " style="border-bottom: 3px solid #2c576a;">
-                      <div class="span12">
-                        <h4><sub><i class="livicon" data-name="pencil" data-size="36"></i></sub>&nbsp;Todays Question</h4>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="row-fluid">
-                      <div class="easypie">
-                        <div class="percentage easyPieChart" data-percent="100" style="width: 100px; height: 100px; line-height: 100px;">
-                          <span><strong><a href="javascript:void(0);">Play</a></strong></span>
-                          <canvas width="100" height="100"></canvas></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-              </div>
-              <!-- end content -->
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-     </div>
-  </article>
-
-  <article class="span3">
-
-   <!--Recent Activity widget-->
-    <div class="jarviswidget customcolor2" id="widget-id-3">
-      <header>
-
-      </header>
-      <div>
-
-        <div class="inner-spacer">
-          <!-- content -->
-          <div class="widget-content-padding">
-            <div class="row-fluid " style="border-bottom: 3px solid #2c576a;">
-              <div class="span12">
-                <h4><sub><i class="livicon" data-name="spinner-four" data-size="36"></i></sub>&nbsp;Recent Activity</h4>
-              </div>
-            </div>
-            <div class="row-fluid">
-              <div class="row-fluid chatt1">
-                <div class="span2">
-                  <i class="icon-thumbs-up" data-size="30"></i>
-                </div>
-                <div class="span9">
-                  You have answered a question for 10 points
-                </div>
-              </div>
-
-              <div class="row-fluid chatt2">
-                <div class="span2">
-                  <i class="icon-thumbs-up" data-size="30"></i>
-                </div>
-                <div class="span9">
-                  You won a bonus worth 50 points
-                </div>
-              </div>
-
-              <div class="row-fluid chatt1">
-                <div class="span2">
-                  <i class="icon-thumbs-up" data-size="30"></i>
-                </div>
-                <div class="span9">
-                  You updated your profile
-                </div>
-              </div>
-            </div>
-            <!-- end content -->
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--Rules end widget-->
-
-    <!--Rules widget-->
-    <div class="jarviswidget customcolor1" id="widget-id-3">
-      <header>
-
-      </header>
-      <div>
-        <div class="inner-spacer">
-          <!-- content -->
-          <div class="widget-content-padding">
-            <div class="row-fluid" >
-              <div class="span12">
-                <div class="row-fluid " style="border-bottom: 3px solid #2c576a;">
-                  <div class="span12">
-                    <h4><sub><i class="livicon" data-name="notebook" data-size="36"></i></sub>&nbsp;Rules</h4>
-                  </div>
-                </div>
-                <br>
-                <div class="row-fluid">
-                  <button type="button" class="btn btn-danger span12 bottom-padded">
-                    <span><h5>Got a question? Check out the rules... </h5></span>
-                  </button>
-                </div>
-
-              </div>
-
-            </div>
-            <!-- end content -->
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--Rules end widget-->
- </article>
-</div>
-<!-- end row-fluid 1 -->
-
-</section>
-<!-- end widget grid -->
 </div>
 </div>
 <!-- end main content -->
 
-<!-- aside right on high res -->
-
-<aside class="right">
-</aside>
-
-<!-- end aside right -->
 </div>
 
 </div>
@@ -522,6 +411,7 @@
 <script type="text/javascript">
     /** DEMO SCRIPTS **/
     $(function () {
+
         /* show tooltips */
 //        $.jGrowl("Don't forget to check out the latest quiz happenings. </br> </br> You can move around the widgets and even change the colors!", {
 //            header: 'Welcome Quizster!',
@@ -540,7 +430,8 @@
 //        });
 
         $('.flexslider').flexslider({
-            animation: "slide"
+            animation: "fade",
+            controlNav: false
         });
 
         $("#btn-blog-next").click(function () {
@@ -556,7 +447,6 @@
         $("#btn-client-prev").click(function () {
             $('#clientCarousel').carousel('prev')
         });
-
 
 
     });

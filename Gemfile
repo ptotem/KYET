@@ -17,7 +17,6 @@ gem 'thin'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'execjs'
-gem 'therubyracer'
 
 
 # Gems used only for assets and not required
